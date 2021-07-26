@@ -12,7 +12,7 @@
     --text-color-light: #ffff;
     --circle-line-color: #905ca8;
     --container-color: #FAFAFA;
-    --container-color-alt: #F0EFEF;
+    --container-color-alt: #f2e8f5;
     --body-color: #FCFCFC;
 
     /* Text Fonts, etc  */
@@ -80,6 +80,10 @@ body.scale-cv {
 }
 
 /* classes modified to reduce size and print on a4 sheet */
+.scale-cv .homeData {
+    padding-top: 1rem;
+}
+
 .scale-cv .generate-pdf {
     display: none;
 }
@@ -150,6 +154,10 @@ body.scale-cv {
     font-size: var(--smaller-font-size);
 }
 
+.scale-cv .experience {
+    padding-top: 2rem;
+}
+
 .scale-cv .educationContainer,
 .scale-cv .experienceContainer,
 .scale-cv .certificateContainer {
@@ -207,6 +215,39 @@ body.scale-cv {
 
 .scale-cv #cv-button {
     display: none;
+}
+
+/* qrcode printed */
+.scale-cv .qrcode {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: flex-end;
+}
+
+.scale-cv .qrcodeContainer {}
+
+.scale-cv .qrcodeContainer img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.scale-cv .qrTitle {
+    width: 40%;
+}
+
+.scale-cv .qrTitle .section-title {
+    margin-bottom: 0;
+    font-size: var(--smaller-font-size);
+}
+
+.scale-cv .qrDesc {
+    font-size: 0.50rem;
 }
 
 body {
@@ -628,13 +669,16 @@ img {
     bottom: 5rem;
 }
 
+.qrcode {
+    display: none;
+}
+
 
 /* MEDIA QUERIES */
 /* Small devices */
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 400px) {
 
-    .languagesContainer2,
-    .hobbiesContainer2 {
+    .scale-cv .qrcode {
         display: none;
     }
 }
@@ -676,7 +720,6 @@ img {
     .cvRight {
         padding: 0 1.5rem;
     }
-
 
     /* PDF GENERATE */
     #cv-button {
