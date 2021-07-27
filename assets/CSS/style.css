@@ -750,15 +750,10 @@ img {
 
     .hobbiesContainer {
         grid-template-columns: repeat(4, max-content);
-        column-gap: 3rem;
+        column-gap: 1rem;
     }
 
-
-
-    .hobbiesContainer2 {
-        grid-template-columns: repeat(2, 1fr);
+    .hobbiesName{
+        font-size: var(--smaller-font-size);
     }
-
-
-
 }
