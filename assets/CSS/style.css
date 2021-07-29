@@ -755,6 +755,10 @@ img {
     .hobbies2{
         display: none;
     }
+
+    .hobbies{
+        display: grid;
+    }
     
     .hobbiesContainer {
         grid-template-columns: repeat(4, max-content);
