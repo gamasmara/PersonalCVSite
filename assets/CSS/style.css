@@ -449,6 +449,10 @@ img {
     margin-bottom: var(--mb-1);
 }
 
+.homeVaccinated{
+    font-size: var(--small-font-size);
+}
+
 .homeAddress {
     gap: 1rem;
 }
