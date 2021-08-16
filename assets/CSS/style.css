@@ -213,6 +213,10 @@ body.scale-cv {
     display: none;
 }
 
+.scale-cv .certificate{
+    padding-bottom: 1rem;
+}
+
 .scale-cv #cv-button {
     display: none;
 }
@@ -222,11 +226,12 @@ body.scale-cv {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 0.5rem;
+    margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    align-items: flex-end;
+    align-items: stretch;
+    top: 0;
 }
 
 .scale-cv .qrcodeContainer {}
@@ -234,11 +239,11 @@ body.scale-cv {
 .scale-cv .qrcodeContainer img {
     height: 50px;
     width: 50px;
-
+    bottom: 0;
 }
 
 .scale-cv .qrTitle {
-    width: 40%;
+    width: 20%;
 }
 
 .scale-cv .qrTitle .section-title {
@@ -602,7 +607,7 @@ img {
 
 /* CERTIFICATE */
 .certificateContent {
-    margin-bottom: var(--mb-2);
+    margin-bottom: 0;
 }
 
 .certificateTitle {
