@@ -461,6 +461,7 @@ img {
     display: flex;
     align-items: center;
     font-size: var(--small-font-size);
+    text-decoration: none;
 }
 
 .homeIcon {
