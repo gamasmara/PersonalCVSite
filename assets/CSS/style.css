@@ -514,7 +514,7 @@ img {
 
 /* PROFILE */
 .profileDesc {
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -557,7 +557,7 @@ img {
 }
 
 .experienceDesc {
-    text-align: left;
+    text-align: justify;
     font-size:var(--smaller-font-size) ;
 }
 
@@ -635,6 +635,16 @@ img {
     display: inline-block;
 }
 
+.certLink {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.certLink:hover {
+    color: var(--title-color);
+}
 
 /* HOBBIES */
 
@@ -748,7 +758,7 @@ img {
 
     .section-title,
     .profileDesc {
-        text-align: initial;
+        text-align: left;
     }
 
     .homeContainer {
